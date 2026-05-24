@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="Cyber Music – Offline music player PWA with IndexedDB storage" />
+    <title>Cyber Music</title>
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      PWABuilder / TWA Hint:
+      For background audio in TWA, add to your TWA manifest / Digital Asset Links:
+        "enableBackgroundAudio": true
+      Also in the AndroidManifest.xml for the WebView wrapper, ensure:
+        android:keepScreenOn="false"
+        and use a foreground service for audio playback.
+      The Media Session API below handles lock-screen controls natively in Chrome.
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
